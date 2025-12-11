@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+/* Container forces the snap behavior */
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; /* Enabling smooth snapping */
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Each section is a full screen */
+.section {
+  height: 120vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  scroll-snap-align: start; /* Where the section snaps to */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+/* Basic styling for content */
+.content {
+  text-align: center;
+  max-width: 600px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.top-logo {
+  text-align: center;        /* Центрирование текста */
+  color: rgb(35, 3, 84);             /* Фиолетовый цвет */
+  font-weight: 900;          /* Жирный шрифт */
+  font-size: 3rem;           /* Размер логотипа */
+  margin: 40px 0;            /* Отступ сверху и снизу */
+  font-family: 'Montserrat', sans-serif; /* красивый шрифт */
+  letter-spacing: 2px;       /* Расстояние между буквами */
+}
+
+/* Alternating background colors for visual separation */
+.section:nth-child(odd) { background-color: #f0f0f0; }
+.section:nth-child(even) { background-color: #ffffff; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  p { font-size: 1.1rem; }
 }
