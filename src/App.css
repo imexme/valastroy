@@ -40,14 +40,14 @@ p {
   text-align: center;        /* Центрирование текста */
   color: rgb(35, 3, 84);             /* Фиолетовый цвет */
   font-weight: 900;          /* Жирный шрифт */
-  font-size: 3rem;           /* Размер логотипа */
+  font-size: 2rem;           /* Размер логотипа */
   margin: 40px 0;            /* Отступ сверху и снизу */
-  font-family: 'Montserrat', sans-serif; /* красивый шрифт */
+  font-family: 'Pacifico', cursive;  /* шрифт Lobster */
   letter-spacing: 2px;       /* Расстояние между буквами */
 }
 
 /* Alternating background colors for visual separation */
-.section:nth-child(odd) { background-color: #f0f0f0; }
+.section:nth-child(odd) { background-color: #f4f2ff; }
 .section:nth-child(even) { background-color: #ffffff; }
 
 /* Responsive adjustments */

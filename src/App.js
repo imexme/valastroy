@@ -71,8 +71,8 @@ Email: allabroker@mail.ru`
 function App() {
   return (
     <div>
-           <header className="top-logo">
-        ВАЛАСТРОЙ
+      <header className="top-logo">
+        ВАТОЛСТРОЙ
       </header>
 
       <div className="container">
