@@ -40,10 +40,10 @@ p {
   text-align: center;        /* Центрирование текста */
   color: rgb(35, 3, 84);             /* Фиолетовый цвет */
   font-weight: 900;          /* Жирный шрифт */
-  font-size: 2rem;           /* Размер логотипа */
-  margin: 40px 0;            /* Отступ сверху и снизу */
+  font-size: 1.25rem;           /* Размер логотипа */
+  margin: 20px 0;            /* Отступ сверху и снизу */
   font-family: 'Pacifico', cursive;  /* шрифт Lobster */
-  letter-spacing: 2px;       /* Расстояние между буквами */
+  letter-spacing: 0px;       /* Расстояние между буквами */
 }
 
 /* Alternating background colors for visual separation */
@@ -52,6 +52,6 @@ p {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  h1 { font-size: 2rem; }
-  p { font-size: 1.1rem; }
+  h1 { font-size: 1.5rem; }
+  p { font-size: 1rem; }
 }
